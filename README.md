@@ -1,4 +1,4 @@
-# website
+# Counterparty Cash (XCPC)
 Counterparty Cash (XCPC) Project Website
 
 To the extent possible under law, Counterparty Cash Association has waived all copyright 
