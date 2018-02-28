@@ -2,7 +2,11 @@ humans.txt
 
 /* TEAM */
 
-Project: Counterparty Cash Association (CCA)
+Name: Counterparty Cash Association (CCA)
+Street: Grafenauweg
+ZIP: 6300 
+City: Zug
+Country: Switzerland
 Web: https://counterparty.cash
 Twitter: @xcpcash
                             
@@ -10,11 +14,16 @@ Location: ZUG, Switzerland, San Francisco.
 
 /* THANKS */
 
-Julian Smith
-Founder, President & CEO
-Blockfreight, Inc.
-Email: julian.smith@blockfreight.com
+Project Sponsor(s):
 
+- Blockfreight, Inc., USA
+
+- Julian Smith
+- Founder, President & CEO
+- Blockfreight, Inc.
+- <julian.smith@blockfreight.com>
+
+/* CREDITS */
 
 Swiss Flag footer icon Created by Ivan Colic
 Source: Noun Project №.#200717
@@ -22,7 +31,7 @@ URI: https://thenounproject.com/term/switzerland/200717
                             
 /* SITE */
                    
-Last update: 2018/FEB/12 
+Last update: 2018/FEB/28
 Standards: HTML5, CSS3      
 Components: Bootstrap 4
                  
