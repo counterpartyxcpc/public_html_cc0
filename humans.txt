@@ -26,7 +26,7 @@ Project Sponsor(s):
 /* CREDITS */
 
 Swiss Flag footer icon Created by Ivan Colic
-Source: Noun Project №.#200717
+Source: Noun Project No.#200717
 URI: https://thenounproject.com/term/switzerland/200717
                             
 /* SITE */
