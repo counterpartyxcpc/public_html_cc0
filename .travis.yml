@@ -24,11 +24,11 @@ deploy:
   github_token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
   verbose: true
   keep-history: true
-  local_dir: pages # Deploy From Only One Folder
+  local_dir: docs # Deploy From Only One Folder
   target_branch: master  # branch contains blog content
   on:
     branch: master
 
 after_success:
-  - git remote add deploy https://github.com/CounterpartyXCPC/counterpartyxcpc.github.io.git
+  - git remote add deploy https://$GITHUB_TOKEN@github.com/CounterpartyXCPC/counterpartyxcpc.github.io.git
   - git push deploy
