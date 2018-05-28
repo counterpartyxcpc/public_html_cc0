@@ -30,5 +30,5 @@ deploy:
     branch: master
 
 after_success:
-  - git remote add -m master https://$GITHUB_TOKEN@github.com/CounterpartyXCPC/counterpartyxcpc.github.io.git
-  - git push --force master HEAD:master
+  - git remote add live https://$GITHUB_TOKEN@github.com/CounterpartyXCPC/counterpartyxcpc.github.io.git
+  - git push --force live
