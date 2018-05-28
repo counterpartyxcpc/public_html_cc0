@@ -25,12 +25,10 @@ deploy:
   verbose: true
   keep-history: true
   local_dir: docs # Deploy From Only One Folder
-  - git remote add deploy https://$GITHUB_TOKEN@github.com/CounterpartyXCPC/counterpartyxcpc.github.io.git
   target_branch: master  # branch contains blog content
-  - git push deploy
   on:
-    branch: master
+    branch: build
 
-# after_success:
-#  - git remote add deploy https://$GITHUB_TOKEN@github.com/CounterpartyXCPC/counterpartyxcpc.github.io.git
-#  - git push deploy
+ after_success:
+  - git remote add deploy https://$GITHUB_TOKEN@github.com/CounterpartyXCPC/counterpartyxcpc.github.io.git
+  - git push deploy
