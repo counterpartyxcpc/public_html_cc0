@@ -17,7 +17,7 @@ install:
 script:
   - hugo
 
-# Deploy to GitHub pages
+# Deploy to build branch
 deploy:
   provider: pages  # GitHub Pages
   skip_cleanup: true
@@ -29,6 +29,7 @@ deploy:
   on:
     branch: master
 
+# Deploy to GitHub pages
 after_success:
   - git remote add deploy https://$GITHUB_TOKEN@github.com/CounterpartyXCPC/counterpartyxcpc.github.io.git
   - git push deploy master
