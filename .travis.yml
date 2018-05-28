@@ -29,6 +29,10 @@ deploy:
   on:
     branch: master
 
+<<<<<<< HEAD
 after_success:
+=======
+ after_success:
+>>>>>>> Update build target in travis.yml
   - git remote add deploy https://$GITHUB_TOKEN@github.com/CounterpartyXCPC/counterpartyxcpc.github.io.git
   - git push deploy
