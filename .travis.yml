@@ -30,6 +30,6 @@ deploy:
     branch: master
 
 after_success:
-  - git status
-  - git checkout -b build | git add . | git commit -m 'Update contents' 
-  - git remote add live https://$GITHUB_TOKEN@github.com/CounterpartyXCPC/counterpartyxcpc.github.io.git | git fetch --unshallow live | git pull | git push --force live HEAD:master
+  - git remote add live https://$GITHUB_TOKEN@github.com/CounterpartyXCPC/counterpartyxcpc.github.io.git
+  - git checkout -b build | git add -A | git commit -m 'Update contents'
+  - git pull | git push --force live HEAD:master
