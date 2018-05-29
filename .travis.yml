@@ -29,7 +29,7 @@ deploy:
   on:
     branch: master
 
-after_success:
+after_deploy:
   - git checkout -b build | git add --verbose --dry-run -A
 #  - git commit -m 'Update contents'
 #  - git remote add liveserver https://$GITHUB_TOKEN@github.com/CounterpartyXCPC/counterpartyxcpc.github.io.git
