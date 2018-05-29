@@ -31,10 +31,5 @@ deploy:
 
 after_success:
   - git status
-  - git checkout -b build
-  - git remote add live https://$GITHUB_TOKEN@github.com/CounterpartyXCPC/counterpartyxcpc.github.io.git
-  - git fetch --unshallow live
-  - git add .
-  - git commit -m "Update content"
-  - git pull
-  - git push --force live HEAD:master
+  - git checkout -b build | git add . | git commit -m 'Update content' 
+  - git remote add live https://$GITHUB_TOKEN@github.com/CounterpartyXCPC/counterpartyxcpc.github.io.git | git fetch --unshallow live | git pull | git push --force live HEAD:master
