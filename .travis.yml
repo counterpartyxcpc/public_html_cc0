@@ -30,14 +30,13 @@ deploy:
     branch: master
 
 after_deploy:
-  - git remote add liveserver https://$GITHUB_TOKEN@github.com/CounterpartyXCPC/counterpartyxcpc.github.io.git
 #  - git checkout -b build
   - cd docs
   - git init
   - git add --verbose .
   - git commit --verbose -m "deploy"
-  - git push --set-upstream counterpartyxcpc.github.io master
-#  - git push liveserver --verbose --force
+  - git remote add liveserver https://$GITHUB_TOKEN@github.com/CounterpartyXCPC/counterpartyxcpc.github.io.git
+  - git push liveserver --verbose --force
 #  - rm -fr .git
 
 #  - git add .
