@@ -36,6 +36,7 @@ after_deploy:
   - git init
   - git add --verbose .
   - git commit --verbose -m "deploy"
+  - git push --set-upstream liveserver master
   - git push liveserver --verbose --force
 #  - rm -fr .git
 
