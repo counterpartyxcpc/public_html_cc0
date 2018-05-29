@@ -30,7 +30,8 @@ deploy:
     branch: master
 
 after_success:
-  - git checkout build
+  - git status
+  - git checkout -b build
   - git remote add live https://$GITHUB_TOKEN@github.com/CounterpartyXCPC/counterpartyxcpc.github.io.git
   - git fetch --unshallow live
   - git add .
