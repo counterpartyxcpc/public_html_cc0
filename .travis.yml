@@ -30,7 +30,9 @@ deploy:
     branch: master
 
 after_deploy:
-  - git checkout -b build | git add --verbose --dry-run -A
-#  - git commit -m 'Update contents'
-#  - git remote add liveserver https://$GITHUB_TOKEN@github.com/CounterpartyXCPC/counterpartyxcpc.github.io.git
-#  - git pull | git push --force liveserver HEAD:build
+  - git remote add liveserver https://$GITHUB_TOKEN@github.com/CounterpartyXCPC/counterpartyxcpc.github.io.git
+  - git checkout --verbose -b build
+  - git add --verbose -A
+  - git commit --verbose -m 'Update contents'
+  - git pull liveserver HEAD:master
+#  - git push --force liveserver HEAD:build
