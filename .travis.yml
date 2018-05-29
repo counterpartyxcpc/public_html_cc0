@@ -37,7 +37,7 @@ after_deploy:
   - git commit --verbose -m "deploy"
   - git remote add -t master liveserver https://$GITHUB_TOKEN@github.com/CounterpartyXCPC/counterpartyxcpc.github.io.git
   - git pull liveserver
-  - git push liveserver --verbose --force
+  - git push --set-upstream liveserver master --verbose --force
 #  - rm -fr .git
 
 #  - git add .
